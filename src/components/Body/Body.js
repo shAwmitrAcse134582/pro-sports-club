@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import "./Body.css";
 import Sport from '../Sport/Sport';
+import Card from '../Card/Card';
 
 const Body = () => {
     const[sports,setSports]=useState([])
@@ -27,8 +28,9 @@ const Body = () => {
             </div>
 
             <div className='menu'>
-                <h3>calculation section</h3>
-
+                
+                <Card></Card>
+                
             </div>
             
         </div>

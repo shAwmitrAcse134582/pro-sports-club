@@ -7,10 +7,14 @@ const Sport = (props) => {
     return (
         <div className='sport'>
             <img src={img} alt=""></img>
-           <h2>{name}</h2>
+            <div className='sport-info'>
+            <h2>{name}</h2>
            <p>{description}</p>
            <h5>age:{age}</h5>
            <h4>time:{time}mins</h4>
+            </div>
+          
+           <button className='btn-sport'>Add To List</button>
           
         </div>
     );

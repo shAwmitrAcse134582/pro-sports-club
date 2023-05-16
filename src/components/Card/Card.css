@@ -1,0 +1,52 @@
+.cart{
+    position: sticky;
+    top: 100px;
+}
+
+.profile{
+    display: flex;
+    justify-content: space-around; 
+    height: 30px;
+    align-items: center;
+
+}
+ .menu img{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    margin-top: 10px;
+}
+
+.profile-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    background-color: azure;
+}
+.height{
+    margin:0 25px;
+}
+.break{
+    display: flex;
+    justify-content: space-between;
+    background-color: azure;
+}
+.break p{
+    border: 1px solid black;
+    border-radius: 40px;
+    background-color: white;
+    padding: 3px;
+}
+
+.cart h4{
+    background-color:azure;
+    padding: 15px;
+}
+.activity{
+    background-color: blue;
+    text-align: center;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
