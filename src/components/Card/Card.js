@@ -1,7 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Card.css';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
-const Card = () => {
+
+const Card = (props) => {
+    const{cart}=props;
+    const [b,setB]=useState(0);
+    let duration=0;
+    console.log(cart);
+    for(const mins of cart){
+        duration=duration+mins.time;
+    }
+   
+    const addBreak=(e)=>{
+      
+        setB(parseInt(e.target.innerText)+b);
+    }
+   
+    
+  
+    let total=parseInt(b)+parseInt(duration);
+    const addToast =()=>{
+        toast('Congratulation! You have done your job in'+ total +'Minitues' );
+    }
     return (
         <div className='cart'>
             <div className='profile'>
@@ -26,20 +48,24 @@ const Card = () => {
                 </div>
                 <h3>Add a Break</h3>
                 <div className='break'>
-                    <p>10m</p>
-                    <p>20m</p>
-                    <p>30m</p>
-                    <p>40m</p>
-                    <p>50m</p>
+                    <button onClick={addBreak}>10</button>
+                    <button onClick={addBreak}>20</button>
+                    <button onClick={addBreak}>30</button>
+                    <button onClick={addBreak}>40</button>
+                    <button onClick={addBreak}>50</button>
+                    
                 </div>
                 <br></br>
                 <h3>Sports duration</h3>
                 
-                <h4 >Sports time:</h4>
+                <h4 >Sports time: {duration} minitue </h4>
 
-                <h4 >Break time:</h4>
+                <h4 >Break time:{b} minitues</h4>
                 <br></br>
-                <h3 className='activity'>Activity Completed</h3>
+                <button onClick={addToast}  className='activity'>Activity Completed</button>
+                <ToastContainer/>
+              
+                
         </div>
     );
 };

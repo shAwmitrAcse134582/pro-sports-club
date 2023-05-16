@@ -31,12 +31,14 @@
     display: flex;
     justify-content: space-between;
     background-color: azure;
+    height: 50px;
 }
-.break p{
+.break button{
     border: 1px solid black;
     border-radius: 40px;
     background-color: white;
-    padding: 3px;
+    padding: 10px;
+    margin: 5px;
 }
 
 .cart h4{
@@ -46,7 +48,9 @@
 .activity{
     background-color: blue;
     text-align: center;
+    font-size: 20px;
     color: white;
     padding: 5px;
     border-radius: 5px;
+    width: 100%;
 }

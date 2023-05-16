@@ -5,6 +5,7 @@ import Card from '../Card/Card';
 
 const Body = () => {
     const[sports,setSports]=useState([])
+    const[cart,setCart]=useState([])
     
       useEffect(()=>{
         fetch("data.json")
@@ -13,14 +14,22 @@ const Body = () => {
 
       },[])
 
+
+      const addClick=(sport)=>{
+        const newSport=[...cart,sport];
+        setCart(newSport);
+       }
+    
     return (
         <div className='body'>
+            
             <div className='card'>
             {/* <h1>Today's sports event</h1>  */}
                 {
                      sports.map(sport=><Sport
                     id={sport.id}
                     sport={sport}
+                    addClick={addClick}
                      >
                      </Sport>)
                 }
@@ -28,8 +37,10 @@ const Body = () => {
             </div>
 
             <div className='menu'>
-                
-                <Card></Card>
+           
+                <Card
+              cart={cart}
+                ></Card>
                 
             </div>
             
