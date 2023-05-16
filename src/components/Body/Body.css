@@ -1,0 +1,17 @@
+.body{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    margin-top: 40px;
+    margin-left: 30px;
+}
+.card{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+   
+   
+}
+.menu{
+    
+}
