@@ -21,8 +21,12 @@
     /* disabled:white,
      disabled:black, */
 }
+@media screen and(max-width:500){
+   .sport{
+    height: 460px;
+   }
+}
 
 .btn-sport:hover{
-    background-color: aquamarine;
-    
+    background-color: aquamarine; 
 }

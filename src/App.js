@@ -8,7 +8,6 @@ import { ToastContainer } from 'react-toastify';
 function App() {
   return (
     <div>
-      
       <Header></Header>
       <br></br>
       <Body></Body>
