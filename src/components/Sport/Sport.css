@@ -18,4 +18,11 @@
     background-color: blue;
     font-size: 25px;
     border-radius: 5px;
+    /* disabled:white,
+     disabled:black, */
+}
+
+.btn-sport:hover{
+    background-color: aquamarine;
+    
 }

@@ -16,7 +16,7 @@ const Sport = (props) => {
            <h4>time:{time}mins</h4>
             </div>
           
-           <button onClick={()=>props.addClick(props.sport)} className='btn-sport'>Add To List</button>
+           <button onClick={()=>props.addClick(props.sport)}  className='btn-sport'>Add To List</button>
           
         </div>
     );

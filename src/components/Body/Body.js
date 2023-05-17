@@ -7,6 +7,7 @@ const Body = () => {
     const[sports,setSports]=useState([])
     const[cart,setCart]=useState([])
     
+    
       useEffect(()=>{
         fetch("data.json")
         .then(res=>res.json())
@@ -18,6 +19,7 @@ const Body = () => {
       const addClick=(sport)=>{
         const newSport=[...cart,sport];
         setCart(newSport);
+        
        }
     
     return (

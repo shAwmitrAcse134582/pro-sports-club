@@ -54,3 +54,29 @@
     border-radius: 5px;
     width: 100%;
 }
+.activity:hover{
+    background-color: aquamarine;
+}
+@media screen and (max-width:500px){
+    .profile{
+        flex-direction: column;
+        margin-top: 40px;
+    }
+    .menu-text{
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+    .profile-info{
+        flex-direction: column;
+        margin-top: 10px;
+        padding-top: 10px;
+        background-color: white;
+    }
+    .break{
+        flex-direction: column;
+        margin-bottom: 150px;
+        background-color: white;
+
+    }
+}
+
